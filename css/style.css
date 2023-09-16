@@ -1,0 +1,136 @@
+:root {
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%);
+}
+
+body {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  background-color: gainsboro !important;
+}
+
+html {
+  /* 62.5% of 16px = 10px */
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--Dark-Slate-Grey) !important;
+  font-weight: 700;
+  text-align: center; /* Center-align the heading */
+  margin-top: 2rem; /* Adjust margin as needed */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+.card {
+  background-color: white !important;
+  border-radius: 2rem !important;
+  border: 0.5px solid white !important; /* Add a border to the card */
+  padding: 2rem; /* Adjust padding as needed */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.title_card {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 2rem 0; /* Adjust top and bottom margin as needed */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0; /* Adjust top and bottom margin as needed */
+}
+
+.list__item {
+  padding: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.list__item img {
+  margin-right: 0.5rem; /* Add space between the icon and text */
+}
+
+p {
+  margin: 1rem 0; /* Adjust top and bottom margin as needed */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.email_address {
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: left;
+  margin: 1.5rem 0; /* Adjust top and bottom margin as needed */
+}
+
+.email_section {
+  margin: 1.5rem 0; /* Adjust top and bottom margin as needed */
+}
+
+.button_email {
+  border-radius: 0.5rem;
+  border: 0.5px solid var(--Grey);
+  padding: 1rem 2rem; /* Adjust padding as needed for both height and width */
+  color: var(--Grey);
+  font-weight: 700;
+  text-align: center;
+  display: block; /* Make it a block element for center alignment */
+  margin: 1rem auto; /* Center-align the button */
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+}
+
+.button_subscribe {
+  border-radius: 0.5rem;
+  background-color: var(--Dark-Slate-Grey);
+  padding: 1rem 2rem; /* Adjust padding as needed for both height and width */
+  color: var(--White);
+  border: none;
+  font-weight: 700;
+  text-align: center;
+  display: block; /* Make it a block element for center alignment */
+  margin: 1rem auto; /* Center-align the button */
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+}
+
+
+/* For desktop version */
+.card__image--desktop img{
+  display: block;
+  max-width: 100%; /* Adjust this value as needed */
+  height: auto;
+}
+
+/* Media query for screens with a maximum width of 374px (e.g., mobile devices) */
+@media screen and (max-width: 374px) {
+  /* Hide the desktop image */
+  .card__image--desktop {
+    display: none !important;
+  }
+
+  /* Display the mobile image */
+  .image_card img {
+    display: block !important;
+    width: 100%; /* Ensure the image doesn't exceed the card width */
+    height: auto;
+    max-width: 100%; /* Ensure the image doesn't exceed the card width */
+  }
+}
