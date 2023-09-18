@@ -43,43 +43,80 @@
       <div class="card">
         <div class="row">
           <!-- Column order depends on screen size -->
-          <div class="col-md-6 col-sm-12 order-md-2 order-sm-1 card__image--desktop">
-            <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign Up Illustration" />
+          <div
+            class="col-md-6 col-sm-12 order-md-2 order-sm-1 card__image--desktop"
+          >
+            <img
+              src="assets/images/illustration-sign-up-desktop.svg"
+              alt="Sign Up Illustration"
+            />
           </div>
           <div class="col-md-6 col-sm-12 order-md-2 order-sm-1 image_card">
-            <img style="display: none" src="assets/images/illustration-sign-up-mobile.svg" alt="Sign Up Illustration" />
+            <img
+              style="display: none"
+              src="assets/images/illustration-sign-up-mobile.svg"
+              alt="Sign Up Illustration"
+            />
           </div>
-          
-          
+
           <div class="col-md-6 col-sm-12 order-md-1 order-sm-2">
-            <h1 class="title_card">Stay updated! </h1>
-            <p>
-              Join 60,000+ product managers receiving monthly updates on:
-            </p>
+            <h1 class="title_card">Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
             <ul class="list">
               <li class="list__item">
-                <img src="assets/images/icon-list.svg" alt="">
+                <img src="assets/images/icon-list.svg" alt="" />
                 Product discovery and building what matters
               </li>
               <li class="list__item">
-                <img src="assets/images/icon-list.svg" alt="">
+                <img src="assets/images/icon-list.svg" alt="" />
                 Measuring to ensure updates are a success
               </li>
               <li class="list__item">
-                <img src="assets/images/icon-list.svg" alt="">
+                <img src="assets/images/icon-list.svg" alt="" />
                 And much more!
               </li>
             </ul>
             <section class="email_section">
               <h4 class="email_address">Email address</h4>
-              <input type="email" id="email" name="email" class="button_email" placeholder="email@company.com" required>
-              <div class="button_subscribe">Subscribe to monthly newsletter</div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="button_email"
+                placeholder="email@company.com"
+                required
+              />
+              <div class="button_subscribe" id="subscribeButton">
+                Subscribe to monthly newsletter
+              </div>
             </section>
+            <!-- The popup container -->
+            <div class="popup" id="popup">
+              <img
+                src="assets/images/icon-list.svg"
+                alt="success"
+                class="icon_success"
+              />
+              <br />
+              <div class="popup-content">
+                <h2>Thanks for subscribing</h2>
+                <p>
+                  A confirmation email has been sent to
+                  <span id="confirmationEmail"></span>.
+                </p>
+                <p>
+                  Please open and click the button inside to confirm your
+                  subscription.
+                </p>
+                <div class="button_subscribe" id="dismissButton">
+                  Dismiss message
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    
 
     <!-- Success message end -->
 
@@ -100,5 +137,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
